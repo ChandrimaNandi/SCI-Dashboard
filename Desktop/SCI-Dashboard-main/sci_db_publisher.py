@@ -29,6 +29,12 @@ def calculate_pactive(cpu_util):
 
 def calculate_sci(file_path):
     df = pd.read_excel(file_path)
+    
+    # Drop rows without an instance and standardize WA app names
+    df = df.dropna(subset=['Instance'])
+    if os.path.basename(file_path).startswith("WA-"):
+        df['Instance'] = df['Instance'].replace('Frontend', 'Web')
+
     # --- 1. INTERVAL CALCULATIONS ---
     df['p_active'] = calculate_pactive(df['CPU_Utilization'])
     df['E_CPU'] = (0.00121 + df['p_active']) * (5/60)
@@ -38,7 +44,7 @@ def calculate_sci(file_path):
     df['Interval_Emissions'] = df['E_NET'] + df['E_DC'] + df['E_EU']
 
     # --- 2. INSTANCE & ITERATION SUMMARIES ---
-    instance_summary = df.groupby(['Iteration', 'Instance'])['Interval_Emissions'].sum().reset_index()
+    instance_summary = df.groupby(['Iteration', 'Instance'])[['E_NET', 'E_DC', 'E_EU', 'Interval_Emissions']].sum().reset_index()
     instance_summary.rename(columns={'Interval_Emissions': 'Total_Instance_Emissions'}, inplace=True)
 
     iteration_summary = instance_summary.groupby('Iteration')['Total_Instance_Emissions'].sum().reset_index()
@@ -46,7 +52,11 @@ def calculate_sci(file_path):
     iteration_summary['Iteration_SCI'] = iteration_summary['Total_Iteration_Emissions'] / 1000
 
     # Calculate Average SCI
-    return iteration_summary['Iteration_SCI'].mean()
+    avg_sci = iteration_summary['Iteration_SCI'].mean()
+    
+    # Calculate per-instance averages across iterations
+    instance_avg = instance_summary.groupby('Instance')[['E_NET', 'E_DC', 'E_EU', 'Total_Instance_Emissions']].mean().reset_index()
+    return avg_sci, instance_avg
 
 def main():
     excel_files = glob.glob(os.path.join(METRICS_DIR, "*.xlsx"))
@@ -72,7 +82,7 @@ def main():
             continue
             
         try:
-            avg_sci = calculate_sci(file_path)
+            avg_sci, instance_metrics_df = calculate_sci(file_path)
             print(f"Processed {basename} -> Avg SCI: {avg_sci:.6f}")
             
             # Create Point
@@ -83,6 +93,23 @@ def main():
                 .tag("protocol_env", f"{protocol}-{env}") \
                 .field("avg_sci", float(avg_sci))
             points.append(point)
+            
+            # Create Instance Points
+            for _, row in instance_metrics_df.iterrows():
+                instance_name = str(row['Instance'])
+                energy_consumed = float(row['Total_Instance_Emissions'])
+                # Publish the metrics per instance
+                inst_point = Point("instance_metrics") \
+                    .tag("app", app) \
+                    .tag("protocol", protocol) \
+                    .tag("environment", env) \
+                    .tag("instance", instance_name) \
+                    .field("E_NET", float(row['E_NET'])) \
+                    .field("E_DC", float(row['E_DC'])) \
+                    .field("E_EU", float(row['E_EU'])) \
+                    .field("Energy consumed", energy_consumed) \
+                    .field("Average SCI", energy_consumed / 1000.0)
+                points.append(inst_point)
         except Exception as e:
             print(f"Error processing {basename}: {e}")
 
