@@ -70,7 +70,16 @@ python3 sci_db_publisher.py
 
 If the API is unavailable or `USE_WEB_GEF` is false, the script falls back to GEF values in the Excel files.
 
-### 4. View the Dashboards
+### 4. Stopping Services and Removing Data
+
+To shut down all services, run 
+```bash
+docker compose down -v
+```
+Note that this will also remove the InfluxDB data.
+
+
+### 5. View the Dashboards
 
 1. Open your browser and navigate to **http://localhost:3000**
 2. **Log in** using the default credentials:
