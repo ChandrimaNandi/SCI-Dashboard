@@ -1,0 +1,2364 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-21T15:04:44.635774",
+    "url": "http://localhost:8086",
+    "organization": "demo_org",
+    "bucket": "demo_bucket"
+  },
+  "sci_metrics": [
+    {
+      "App": "HC",
+      "Protocol": "HTTP",
+      "Environment": "K8",
+      "Avg SCI": 0.1263257818210574
+    },
+    {
+      "App": "HC",
+      "Protocol": "MQTT",
+      "Environment": "K8",
+      "Avg SCI": 0.1280362555308938
+    },
+    {
+      "App": "HC",
+      "Protocol": "HTTP",
+      "Environment": "VM",
+      "Avg SCI": 0.12130119389230705
+    },
+    {
+      "App": "HC",
+      "Protocol": "MQTT",
+      "Environment": "VM",
+      "Avg SCI": 0.12204728672311176
+    },
+    {
+      "App": "PT",
+      "Protocol": "HTTP",
+      "Environment": "K8",
+      "Avg SCI": 0.10795036653043466
+    },
+    {
+      "App": "PT",
+      "Protocol": "MQTT",
+      "Environment": "K8",
+      "Avg SCI": 0.1170482742197974
+    },
+    {
+      "App": "PT",
+      "Protocol": "HTTP",
+      "Environment": "VM",
+      "Avg SCI": 0.10594310404500958
+    },
+    {
+      "App": "PT",
+      "Protocol": "MQTT",
+      "Environment": "VM",
+      "Avg SCI": 0.1103923142517862
+    },
+    {
+      "App": "SB",
+      "Protocol": "HTTP",
+      "Environment": "K8",
+      "Avg SCI": 0.1481598805792778
+    },
+    {
+      "App": "SB",
+      "Protocol": "MQTT",
+      "Environment": "K8",
+      "Avg SCI": 0.15166103493448402
+    },
+    {
+      "App": "SB",
+      "Protocol": "HTTP",
+      "Environment": "VM",
+      "Avg SCI": 0.13418832669647573
+    },
+    {
+      "App": "SB",
+      "Protocol": "MQTT",
+      "Environment": "VM",
+      "Avg SCI": 0.13538397637056376
+    },
+    {
+      "App": "WA",
+      "Protocol": "HTTP",
+      "Environment": "K8",
+      "Avg SCI": 0.15196570122823952
+    },
+    {
+      "App": "WA",
+      "Protocol": "MQTT",
+      "Environment": "K8",
+      "Avg SCI": 0.14543426850196514
+    },
+    {
+      "App": "WA",
+      "Protocol": "HTTP",
+      "Environment": "VM",
+      "Avg SCI": 0.08614914897434972
+    },
+    {
+      "App": "WA",
+      "Protocol": "MQTT",
+      "Environment": "VM",
+      "Avg SCI": 0.13171343886786238
+    }
+  ],
+  "instance_metrics": [
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "API",
+      "field": "Average SCI",
+      "value": 0.04184891631193087
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "API",
+      "field": "Average SCI",
+      "value": 0.04225386817010165
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.04003826055294874
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.04089599842371836
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.04443860495617779
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.044886388937073765
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "API",
+      "field": "Average SCI",
+      "value": 0.04083444742683596
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "API",
+      "field": "Average SCI",
+      "value": 0.041382742020916415
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.037945200643864876
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.03864686215296654
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.042521545821606214
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.04201768254922879
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.03826137716183176
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.041369437589044475
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.0347192344016348
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.037534614788806916
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.0349697549669681
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.038144221841945984
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.0366426878897616
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Average SCI",
+      "value": 0.03824133219519565
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.034737297695388254
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.03610811529793135
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.03456311845985972
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.036042866758659205
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "Average SCI",
+      "value": 0.037087140856033665
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "Average SCI",
+      "value": 0.037680185329157546
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.036700062392052375
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.037943853033217435
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "Average SCI",
+      "value": 0.03671355061403967
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "Average SCI",
+      "value": 0.03773796573824349
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "Average SCI",
+      "value": 0.037659126717152096
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "Average SCI",
+      "value": 0.03829903083386554
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "Average SCI",
+      "value": 0.033680694028216815
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "Average SCI",
+      "value": 0.03381723747384007
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.03314069396929932
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Average SCI",
+      "value": 0.03366669497642723
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "Average SCI",
+      "value": 0.03343915891097485
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "Average SCI",
+      "value": 0.033814276873095336
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "Average SCI",
+      "value": 0.03392777978798477
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "Average SCI",
+      "value": 0.03408576704720112
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "Average SCI",
+      "value": 0.0372382680260706
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "Average SCI",
+      "value": 0.03709206278281946
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "Average SCI",
+      "value": 0.03934273488592369
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "Average SCI",
+      "value": 0.03602862922405291
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.03839643056935608
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.03640996238437694
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.036988267746889174
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.03590361411071583
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "Average SCI",
+      "value": 0.021420569408286995
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "Average SCI",
+      "value": 0.03422456804572143
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "Average SCI",
+      "value": 0.021646575401521206
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "Average SCI",
+      "value": 0.032304504621776864
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.021865581421256337
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Average SCI",
+      "value": 0.032756248547757105
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.021216422743285175
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Average SCI",
+      "value": 0.032428117652607016
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "API",
+      "field": "E_DC",
+      "value": 15.555454952066777
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "API",
+      "field": "E_DC",
+      "value": 15.178935593244296
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 13.74188910099563
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 13.88496315990448
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 18.08022767097157
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 17.863047901123775
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "API",
+      "field": "E_DC",
+      "value": 15.77216954020173
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "API",
+      "field": "E_DC",
+      "value": 15.800208307545857
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 12.850249509222605
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 12.892436950151216
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 17.519607558393574
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 16.355927066554212
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 16.774452684634085
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 17.317101200086974
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 13.142276149235924
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 13.547079461071805
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 13.478609009281703
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 14.001953029820934
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 16.78204620833333
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_DC",
+      "value": 17.07789453853928
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 14.883272474931266
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 15.101112755612528
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 14.70692993338625
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 15.003311267994226
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "E_DC",
+      "value": 13.742299017572178
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "E_DC",
+      "value": 13.434852918275082
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 13.35941015286639
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 13.573775585840272
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "E_DC",
+      "value": 13.407256778744204
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "E_DC",
+      "value": 13.49274882078683
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "E_DC",
+      "value": 14.323660398518081
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "E_DC",
+      "value": 14.05291124207639
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "E_DC",
+      "value": 12.662342116236275
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "E_DC",
+      "value": 12.176175794224855
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 12.024175881393377
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_DC",
+      "value": 12.02595665387751
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "E_DC",
+      "value": 12.320305268840405
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "E_DC",
+      "value": 12.171556061807253
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "E_DC",
+      "value": 12.87636266547716
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "E_DC",
+      "value": 12.385352141024569
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "E_DC",
+      "value": 13.510411981960212
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "E_DC",
+      "value": 14.393369447354752
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "E_DC",
+      "value": 15.569780884201071
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "E_DC",
+      "value": 13.4057470494375
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 14.639014003216822
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 13.858168333981995
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 13.263004122747475
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 13.314245280408931
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "E_DC",
+      "value": 8.5574195901718
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "E_DC",
+      "value": 14.245458439784942
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "E_DC",
+      "value": 8.856745099060108
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "E_DC",
+      "value": 12.417518465855048
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 8.994757120420394
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_DC",
+      "value": 12.78083777929679
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 8.440140134407931
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_DC",
+      "value": 12.545671874959112
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "API",
+      "field": "E_EU",
+      "value": 26.102500000000003
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "API",
+      "field": "E_EU",
+      "value": 26.849999999999998
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 26.102500000000003
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 26.849999999999998
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 26.102500000000003
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 26.849999999999998
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "API",
+      "field": "E_EU",
+      "value": 24.9525
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "API",
+      "field": "E_EU",
+      "value": 25.5625
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 24.9525
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 25.5625
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 24.9525
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 25.5625
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 21.465405831339698
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 23.96383074162677
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 21.465405831339698
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 23.96383074162677
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 21.465405831339698
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 23.96383074162677
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 19.84249999999999
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_EU",
+      "value": 20.99374999999999
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 19.84249999999999
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 20.99374999999999
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 19.84249999999999
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 20.99374999999999
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "E_EU",
+      "value": 23.20682117224879
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "E_EU",
+      "value": 24.244723385167447
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 23.20682117224879
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 24.244723385167447
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "E_EU",
+      "value": 23.20682117224879
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "E_EU",
+      "value": 24.244723385167447
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "E_EU",
+      "value": 23.20682117224879
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "E_EU",
+      "value": 24.244723385167447
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "E_EU",
+      "value": 21.012404425837307
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "E_EU",
+      "value": 21.632703857655486
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 21.012404425837307
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_EU",
+      "value": 21.632703857655486
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "E_EU",
+      "value": 21.012404425837307
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "E_EU",
+      "value": 21.632703857655486
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "E_EU",
+      "value": 21.012404425837307
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "E_EU",
+      "value": 21.632703857655486
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "E_EU",
+      "value": 23.60579744816585
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "E_EU",
+      "value": 22.526017743221676
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "E_EU",
+      "value": 23.60579744816585
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "E_EU",
+      "value": 22.526017743221676
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 23.60579744816585
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 22.526017743221676
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 23.60579744816585
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 22.526017743221676
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "E_EU",
+      "value": 12.776249999999997
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "E_EU",
+      "value": 19.880986842105255
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "E_EU",
+      "value": 12.776249999999997
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "E_EU",
+      "value": 19.880986842105255
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 12.776249999999997
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_EU",
+      "value": 19.880986842105255
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 12.776249999999997
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_EU",
+      "value": 19.880986842105255
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "API",
+      "field": "E_NET",
+      "value": 0.19096135986410082
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "API",
+      "field": "E_NET",
+      "value": 0.224932576857352
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.19387145195311553
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.16103526381387684
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.2558772852062247
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.17334103594999759
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "API",
+      "field": "E_NET",
+      "value": 0.10977788663422687
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "API",
+      "field": "E_NET",
+      "value": 0.0200337133705616
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.14245113464227568
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.19192520281532777
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.04943826321264108
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.09925548267457635
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.02151864585797887
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.08850564733072787
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.11155242105918296
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.02370458610834561
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.025740126346703376
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.1784380704982865
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.018141681428274336
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "E_NET",
+      "value": 0.16968765665637311
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.011525220456998789
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.013252542318827986
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.013688526473473751
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.04580549066498254
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "E_NET",
+      "value": 0.13802066621269624
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "E_NET",
+      "value": 0.0006090257150200991
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.13383106693719232
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.12535406220971865
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "E_NET",
+      "value": 0.09947266304667392
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "E_NET",
+      "value": 0.0004935322892192375
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "E_NET",
+      "value": 0.12864514638522687
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "E_NET",
+      "value": 0.0013962066217006513
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "E_NET",
+      "value": 0.005947486143234569
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "E_NET",
+      "value": 0.008357821959729768
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.10411366206863243
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "E_NET",
+      "value": 0.00803446489422748
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "E_NET",
+      "value": 0.10644921629713423
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "E_NET",
+      "value": 0.01001695363259543
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "E_NET",
+      "value": 0.039012696670312805
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "E_NET",
+      "value": 0.0677110485210642
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "E_NET",
+      "value": 0.12205859594453737
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "E_NET",
+      "value": 0.17267559224302334
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "E_NET",
+      "value": 0.16715655355677272
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "E_NET",
+      "value": 0.09686443139373169
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.15161911797340633
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.02577630717326414
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.11946617597584876
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.0633510870852267
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "E_NET",
+      "value": 0.08689981811519504
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "E_NET",
+      "value": 0.09812276383123376
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "E_NET",
+      "value": 0.013580302461102188
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "E_NET",
+      "value": 0.005999313816556172
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.09457430083594388
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "E_NET",
+      "value": 0.09442392635505308
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 3.260887724657853e-05
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "E_NET",
+      "value": 0.0014589355426448348
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "API",
+      "field": "Energy consumed",
+      "value": 41.84891631193087
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "API",
+      "field": "Energy consumed",
+      "value": 42.25386817010165
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 40.03826055294874
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 40.89599842371836
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 44.43860495617779
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 44.88638893707377
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "API",
+      "field": "Energy consumed",
+      "value": 40.83444742683596
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "API",
+      "field": "Energy consumed",
+      "value": 41.38274202091642
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 37.94520064386488
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 38.64686215296654
+    },
+    {
+      "app": "HC",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 42.52154582160622
+    },
+    {
+      "app": "HC",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 42.01768254922879
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 38.26137716183176
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 41.36943758904447
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 34.7192344016348
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 37.53461478880692
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 34.969754966968104
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 38.144221841945985
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 36.642687889761596
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Main",
+      "field": "Energy consumed",
+      "value": 38.241332195195646
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 34.73729769538826
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 36.10811529793135
+    },
+    {
+      "app": "PT",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 34.563118459859716
+    },
+    {
+      "app": "PT",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 36.0428667586592
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "Energy consumed",
+      "value": 37.08714085603366
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Bulb",
+      "field": "Energy consumed",
+      "value": 37.680185329157545
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 36.700062392052374
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 37.94385303321744
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "Energy consumed",
+      "value": 36.71355061403967
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensor",
+      "field": "Energy consumed",
+      "value": 37.737965738243496
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "Energy consumed",
+      "value": 37.6591267171521
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Server",
+      "field": "Energy consumed",
+      "value": 38.29903083386554
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "Energy consumed",
+      "value": 33.68069402821681
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Bulb",
+      "field": "Energy consumed",
+      "value": 33.81723747384007
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 33.14069396929932
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Frontend",
+      "field": "Energy consumed",
+      "value": 33.66669497642723
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "Energy consumed",
+      "value": 33.43915891097485
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensor",
+      "field": "Energy consumed",
+      "value": 33.81427687309534
+    },
+    {
+      "app": "SB",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "Energy consumed",
+      "value": 33.927779787984775
+    },
+    {
+      "app": "SB",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Server",
+      "field": "Energy consumed",
+      "value": 34.085767047201124
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "Energy consumed",
+      "value": 37.2382680260706
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Cloud",
+      "field": "Energy consumed",
+      "value": 37.092062782819454
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "Energy consumed",
+      "value": 39.34273488592369
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Edge",
+      "field": "Energy consumed",
+      "value": 36.02862922405291
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 38.39643056935608
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 36.40996238437694
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 36.98826774688917
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "K8",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 35.903614110715836
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "Energy consumed",
+      "value": 21.420569408286994
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Cloud",
+      "field": "Energy consumed",
+      "value": 34.22456804572143
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "Energy consumed",
+      "value": 21.646575401521208
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Edge",
+      "field": "Energy consumed",
+      "value": 32.304504621776864
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 21.865581421256337
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Sensors",
+      "field": "Energy consumed",
+      "value": 32.7562485477571
+    },
+    {
+      "app": "WA",
+      "protocol": "HTTP",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 21.216422743285175
+    },
+    {
+      "app": "WA",
+      "protocol": "MQTT",
+      "environment": "VM",
+      "instance": "Web",
+      "field": "Energy consumed",
+      "value": 32.428117652607014
+    }
+  ],
+  "statistics": {
+    "sci": {
+      "minimum": 0.08614914897434972,
+      "maximum": 0.15196570122823952,
+      "average": 0.126481272072976,
+      "count": 16
+    },
+    "energy_consumed": {
+      "minimum": 21.216422743285175,
+      "maximum": 44.88638893707377,
+      "average": 36.13750630656458,
+      "total": 2023.7003531676164,
+      "count": 56,
+      "unit": "g CO2"
+    }
+  }
+}
