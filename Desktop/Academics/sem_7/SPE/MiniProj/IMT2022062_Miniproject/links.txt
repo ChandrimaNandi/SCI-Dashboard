@@ -1,2 +1,0 @@
-Github Repo - https://github.com/ChandrimaNandi/Scientific_calculator
-DockerHub - https://hub.docker.com/u/chandrimanandi
