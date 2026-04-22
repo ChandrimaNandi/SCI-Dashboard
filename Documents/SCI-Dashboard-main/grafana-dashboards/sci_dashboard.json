@@ -1,0 +1,366 @@
+{
+    "annotations": {
+        "list": [
+            {
+                "builtIn": 1,
+                "datasource": {
+                    "type": "grafana",
+                    "uid": "-- Grafana --"
+                },
+                "enable": true,
+                "hide": true,
+                "iconColor": "rgba(0, 211, 255, 1)",
+                "name": "Annotations & Alerts",
+                "type": "dashboard"
+            }
+        ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": null,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+        {
+            "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb-datasource"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "thresholds"
+                    },
+                    "custom": {
+                        "align": "auto",
+                        "cellOptions": {
+                            "type": "color-background"
+                        },
+                        "inspect": false
+                    },
+                    "decimals": 4,
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "orange",
+                                "value": 75
+                            },
+                            {
+                                "color": "red",
+                                "value": 90
+                            }
+                        ]
+                    }
+                },
+                "overrides": [
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "app"
+                        },
+                        "properties": [
+                            {
+                                "id": "custom.cellOptions",
+                                "value": {
+                                    "type": "text"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "gridPos": {
+                "h": 12,
+                "w": 10,
+                "x": 0,
+                "y": 0
+            },
+            "id": 1,
+            "options": {
+                "cellHeight": "sm",
+                "footer": {
+                    "countRows": false,
+                    "fields": "",
+                    "reducer": [
+                        "sum"
+                    ],
+                    "show": false
+                },
+                "showHeader": true,
+                "sortBy": []
+            },
+            "pluginVersion": "10.4.1",
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "influxdb",
+                        "uid": "influxdb-datasource"
+                    },
+                    "query": "from(bucket: \"demo_bucket\")\n  |> range(start: -30d)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"sci_metrics\")\n  |> filter(fn: (r) => r[\"_field\"] == \"avg_sci\")\n  |> last()\n  |> keep(columns: [\"app\", \"protocol\", \"environment\", \"_value\"])\n  |> pivot(rowKey: [\"app\"], columnKey: [\"protocol\", \"environment\"], valueColumn: \"_value\")\n  |> group()",
+                    "refId": "A"
+                }
+            ],
+            "title": "SCI Matrix (App vs Environment)",
+            "type": "table"
+        },
+        {
+            "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb-datasource"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "drawStyle": "bars",
+                        "fillOpacity": 80,
+                        "gradientMode": "none",
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution": {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking": {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle": {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 12,
+                "w": 14,
+                "x": 10,
+                "y": 0
+            },
+            "id": 2,
+            "options": {
+                "barRadius": 0,
+                "barWidth": 0.8,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                    "calcs": [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "orientation": "auto",
+                "showValue": "always",
+                "stacking": "none",
+                "text": {},
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+            },
+            "pluginVersion": "10.4.1",
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "influxdb",
+                        "uid": "influxdb-datasource"
+                    },
+                    "query": "from(bucket: \"demo_bucket\")\n  |> range(start: -30d)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"sci_metrics\")\n  |> filter(fn: (r) => r[\"_field\"] == \"avg_sci\")\n  |> filter(fn: (r) => r[\"app\"] == \"${App}\")\n  |> last()\n  |> keep(columns: [\"protocol\", \"environment\", \"_value\"])\n  |> pivot(rowKey: [\"protocol\"], columnKey: [\"environment\"], valueColumn: \"_value\")\n  |> group()",
+                    "refId": "A"
+                }
+            ],
+            "title": "SCI Breakdown for App: ${App}",
+            "type": "barchart"
+        },
+        {
+            "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb-datasource"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "align": "auto",
+                        "cellOptions": {
+                            "type": "auto"
+                        },
+                        "inspect": false
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    }
+                },
+                "overrides": [
+                    {
+                        "matcher": {
+                            "id": "byType",
+                            "options": "number"
+                        },
+                        "properties": [
+                            {
+                                "id": "custom.align",
+                                "value": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "instance"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "Instance"
+                            },
+                            {
+                                "id": "custom.align",
+                                "value": "left"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "gridPos": {
+                "h": 10,
+                "w": 24,
+                "x": 0,
+                "y": 12
+            },
+            "id": 3,
+            "options": {
+                "cellHeight": "sm",
+                "footer": {
+                    "countRows": false,
+                    "fields": "",
+                    "reducer": [
+                        "sum"
+                    ],
+                    "show": true
+                },
+                "showHeader": true,
+                "sortBy": []
+            },
+            "pluginVersion": "10.4.1",
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "influxdb",
+                        "uid": "influxdb-datasource"
+                    },
+                    "query": "from(bucket: \"demo_bucket\")\n  |> range(start: -30d)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"instance_metrics\")\n  |> filter(fn: (r) => r[\"app\"] == \"${App}\")\n  |> filter(fn: (r) => r[\"_field\"] != \"Average SCI\")\n  |> last()\n  |> group()\n  |> pivot(rowKey: [\"instance\"], columnKey: [\"_field\"], valueColumn: \"_value\")",
+                    "refId": "A"
+                }
+            ],
+            "title": "${App} Summary",
+            "type": "table"
+        }
+    ],
+    "refresh": false,
+    "schemaVersion": 39,
+    "tags": [
+        "sci",
+        "sustainability"
+    ],
+    "templating": {
+        "list": [
+            {
+                "current": {
+                    "selected": false,
+                    "text": "HC",
+                    "value": "HC"
+                },
+                "hide": 0,
+                "includeAll": false,
+                "multi": false,
+                "name": "App",
+                "options": [
+                    {
+                        "selected": true,
+                        "text": "HC",
+                        "value": "HC"
+                    },
+                    {
+                        "selected": false,
+                        "text": "PT",
+                        "value": "PT"
+                    },
+                    {
+                        "selected": false,
+                        "text": "SB",
+                        "value": "SB"
+                    },
+                    {
+                        "selected": false,
+                        "text": "WA",
+                        "value": "WA"
+                    }
+                ],
+                "query": "HC,PT,SB,WA",
+                "queryValue": "",
+                "skipUrlSync": false,
+                "type": "custom"
+            }
+        ]
+    },
+    "time": {
+        "from": "now-6h",
+        "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "SCI Comparative Dashboard",
+    "uid": "sci-comparative",
+    "version": 5,
+    "weekStart": ""
+}
